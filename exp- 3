@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login - Course Portal</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background: url("image.png") no-repeat center center/cover;
+position:relative;
+}
+
+
+body::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+z-index:0;
+}
+
+/* Login Box */
+.login-box{
+position:relative;
+z-index:1;
+background:rgba(255,255,255,0.95);
+padding:40px;
+width:350px;
+border-radius:15px;
+box-shadow:0 8px 25px rgba(0,0,0,0.5);
+text-align:center;
+}
+
+.login-box h2{
+margin-bottom:20px;
+color:#0B1C2D;
+}
+
+.login-box input{
+width:100%;
+padding:12px;
+margin:12px 0;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:14px;
+}
+
+.login-box button{
+width:100%;
+padding:12px;
+background:#0B1C2D;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+transition:0.3s;
+}
+
+.login-box button:hover{
+background:#63F8E6;
+color:black;
+}
+</style>
+
+</head>
+<body>
+
+<div class="login-box">
+<h2>Course & Syllabus Portal</h2>
+<form action="index.html">
+<input type="text" placeholder="Username" required>
+<input type="password" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
+</div>
+
+</body>
+</html>
